@@ -65,7 +65,16 @@ a.footer-webstudio {
 display: block;
 margin-bottom: 20px;
 }
+} .logo-web {
+  color: var(--accent-color);
+
+  font-weight: 700;
 }
+
+.logo-studiow {
+  color: var(--button-text);
+}
+
 
 .footer {
 padding-top: 60px;
