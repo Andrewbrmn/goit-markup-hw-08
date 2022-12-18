@@ -1,0 +1,117 @@
+.section.advantages {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+    
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+  .title {
+    color: var(--secondary-text-color);
+  }
+  
+  .advantages__list {
+    @media screen and (max-width: 767px) {
+      display: block;
+  
+    }
+    
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;  
+    }
+    @media screen and (min-width:1200px) {
+      display: flex;
+    }
+    }
+  
+  .advantages__list > .advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+  margin-bottom: 0;
+  }
+    
+  }
+  .advantages__list > .advantage-icon:not(:last-child) {
+    margin-right: 30px;
+  }
+  .advantages__list  > .advantages__item {
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 354px;
+      }
+    @media screen and (min-width:1200px) {
+      width: calc((100% - 120px) / 4);  
+    }
+    
+  }
+ 
+  .advantage-icon:not(:last-child){
+    margin-right: 0px;
+  }
+  
+  .advantages-title {
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+
+    @media screen and (min-width:1200px) {
+    padding-top: 0;
+
+    }
+      
+    }
+  
+  
+  .title-list {
+    color: var(--primary-text-color);
+  }
+  
+  .advantages-text {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  
+  }
+  
+
+  .adv {
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    height: 120px;
+    display: flex;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    @media screen and (min-width:768px) {
+      background-color: #F5F4FA;
+      display: flex;
+      width: 354px;
+      height: 120px;
+      justify-content: center;
+    align-items: center;
+
+    }
+    @media screen and (min-width:1200px) {
+    background-color: #F5F4FA;
+    display: flex;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    align-items:center;
+    justify-content: center;
+  }
+}
