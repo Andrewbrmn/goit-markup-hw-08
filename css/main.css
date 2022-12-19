@@ -20,7 +20,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -100,9 +100,8 @@ ul {
 @media screen and (max-width: 767px) {
   .auth-nav__phone {
     display: block;
-    position: absolute;
-    right: 15px;
-    top: 15px;
+    margin-left: auto;
+    top: 25px;
   }
 }
 
@@ -120,6 +119,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -157,11 +157,13 @@ ul {
 @media screen and (min-width: 768px) {
   .auth-nav__item:not(:last-child) {
     margin-right: 0;
+    padding-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__item:not(:last-child) {
     margin-right: 50px;
+    padding: 0%;
   }
 }
 
@@ -202,10 +204,34 @@ ul {
   -webkit-text-emphasis: none;
           text-emphasis: none;
 }
+@media screen and (min-width: 768px) {
+  .auth-nav__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .auth-nav__icon-tel {
   fill: var(--primary-text-color);
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .auth-nav__icon-tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon-tel {
+    width: 10px;
+    height: 12px;
+  }
 }
 
 .auth-nav__link:hover .auth-nav__icon-mail {
@@ -357,12 +383,9 @@ ul {
 }
 
 .menu-button {
-  margin: 0;
-  padding: 0;
+  margin-left: auto;
   z-index: 100;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   border: none;
   background-color: transparent;
 }
@@ -548,7 +571,6 @@ ul {
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
-    width: 1200px;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -605,6 +627,7 @@ ul {
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 @media screen and (min-width: 768px) {
@@ -617,6 +640,7 @@ ul {
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -628,6 +652,7 @@ ul {
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -1525,11 +1550,11 @@ h2.team {
 
 /* .clients-list */
 @media screen and (max-width: 767px) {
-  .clients__icon {
+  .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -1540,19 +1565,17 @@ h2.team {
         -ms-flex-pack: center;
             justify-content: center;
     fill: var(--icons-color);
-    margin-right: 30px;
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 768px) {
-  .clients__icon {
+  .clients__list {
     width: 226px;
     height: 92px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 0;
     fill: var(--icons-color);
     border: 1px solid #AFB1B8;
     -webkit-box-align: center;
@@ -1566,13 +1589,12 @@ h2.team {
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients__icon {
+  .clients__list {
     width: 170px;
     height: 92px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 0;
     fill: var(--icons-color);
     border: 1px solid #AFB1B8;
     -webkit-box-align: center;
@@ -1926,6 +1948,7 @@ h2.team {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 20px;
   }
 }
 
@@ -1960,6 +1983,7 @@ h2.team {
 @media screen and (min-width: 1200px) {
   .footer-link__title {
     display: inline-block;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -2078,6 +2102,7 @@ h2.team {
 }
 @media screen and (min-width: 1200px) {
   .footer-email {
+    margin-top: 40px;
     margin-left: 93px;
     display: block;
     -webkit-box-pack: space-evenly;
